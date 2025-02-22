@@ -27,7 +27,7 @@ header {
   align-items: center;
   padding: 5px 35px;
   background-color: rgb(17, 26, 44);
-  position: fixed;
+  position: sticky;
   width: 100%;
   box-sizing: border-box;
   top: 0;
@@ -62,16 +62,11 @@ nav ul li a:hover {
   color: #b2c9ad;
 }
 
-hr {
-  margin-top: 10px;
-  border: 1px solid black;
-}
-
 .header-main {
   display: flex;
   align-items: center;
-  margin-top: 120px;
   flex-direction: column;
+  gap: 1px;
 }
 
 .gradient-text {
