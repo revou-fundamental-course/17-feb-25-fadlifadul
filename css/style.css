@@ -56,10 +56,19 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: aliceblue;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   color: #b2c9ad;
+  transform: translateY(-3px) scale(1.05);
 }
 
 .header-main {
@@ -81,17 +90,12 @@ nav ul li a:hover {
   display: flex;
   gap: 50px;
   padding: 60px;
-  box-sizing: border-box;
 }
 
 .banner,
 .contact {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
   overflow: hidden;
 }
 
@@ -106,8 +110,20 @@ nav ul li a:hover {
 .contact {
   flex: 1;
   margin-left: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact h4 {
-  padding: 10px 50px;
+.judul-contact {
+  padding: 40px 50px;
+}
+
+.judul-contact p {
+  font-size: small;
+  color: rgba(156 163 175);
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
 }
