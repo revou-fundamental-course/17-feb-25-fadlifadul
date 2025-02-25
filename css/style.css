@@ -91,19 +91,30 @@ nav ul li a:hover {
   margin: 40px 100px 0px;
 }
 
-.banner,
+.banner {
+  flex: 2;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact {
   box-shadow: 0px 8px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.banner {
-  flex: 2;
-  background-image: url(../assets/main.jpg);
+.banner-content img {
+  width: 100%;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  border-radius: 10px;
+}
+
+.banner-content em {
+  font-size: 1.1em;
+  margin: 50px auto;
 }
 
 .contact {
@@ -137,6 +148,13 @@ nav ul li a:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-contact input:focus,
+.form-contact select:focus {
+  outline: none;
+  border-color: #1083ff;
 }
 
 .form-contact button {
@@ -144,12 +162,25 @@ nav ul li a:hover {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(17, 26, 44);
+  background-color: #22c55e;
   color: aliceblue;
   cursor: pointer;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-contact button:hover {
-  background-color: #1d2532;
+  background-color: #16a34a;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.judul-package {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.content-package {
+  margin-top: 80px;
+  background-color: #b2c9ad;
 }
