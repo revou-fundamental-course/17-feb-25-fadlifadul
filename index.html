@@ -37,18 +37,24 @@
 
         <!-- form contact us -->
         <aside class="contact">
-          <div class="judul-contact">
-            <h3>Contact Us</h3>
-            <p>Sales akan menghungi anda 1x24 Jam setelah data kami terima.</p>
-          </div>
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terimakasih.</p>
 
-          <!-- form -->
-          <div class="form-contact">
-            <label for="name">Your Name:</label>
-            <input type="text" name="name" id="name" placeholder="First and Last name" />
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="examples@email.com" />
-            <label for="What are you interested in?">What are you interested in?</label>
+            <!-- form -->
+            <form class="form-contact">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" placeholder="First and Last name" />
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="examples@email.com" />
+              <label for="interest">What are you interested in?</label>
+              <select name="interest" id="interest">
+                <option value="">Select option</option>
+                <option value="">option1</option>
+                <option value="">option2</option>
+              </select>
+              <button type="submit" class="poppins-semibold">SEND</button>
+            </form>
           </div>
         </aside>
       </section>

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(10, 15, 25);
-  height: 1000px;
+  height: 2000px;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
@@ -75,7 +75,6 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1px;
 }
 
 .gradient-text {
@@ -89,7 +88,7 @@ nav ul li a:hover {
 .main-content {
   display: flex;
   gap: 50px;
-  padding: 60px;
+  margin: 40px 100px 0px;
 }
 
 .banner,
@@ -104,26 +103,53 @@ nav ul li a:hover {
   background-image: url(../assets/main.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .contact {
   flex: 1;
   margin-left: 35px;
-  display: flex;
-  flex-direction: column;
 }
 
-.judul-contact {
-  padding: 40px 50px;
-}
-
-.judul-contact p {
+.contact-container p {
   font-size: small;
   color: rgba(156 163 175);
+}
+
+.contact-container {
+  max-width: 350px; /* Batas lebar agar form sejajar dengan teks */
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 10px auto 0px;
 }
 
 .form-contact {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  margin-top: 50px;
+}
+
+.form-contact input,
+.form-contact select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-contact button {
+  margin-top: 70px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(17, 26, 44);
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-contact button:hover {
+  background-color: #1d2532;
 }
